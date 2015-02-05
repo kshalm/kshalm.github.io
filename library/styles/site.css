@@ -6953,7 +6953,7 @@ h6 {
   margin-top: -1px;
   opacity: 1;
   z-index: 10;
-  display: block\9;
+  display: block;
 }
 /* line 125, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/vendor/flat-ui/modules/_select.sass */
 .dk_open .dk_label {
@@ -6968,7 +6968,7 @@ h6 {
   opacity: 0;
   width: 220px;
   z-index: -100;
-  display: none\9;
+  display: none;
   -webkit-transition: 0.1s ease-out;
   -moz-transition: 0.1s ease-out;
   -o-transition: 0.1s ease-out;
@@ -8275,11 +8275,15 @@ body {
   background: #34495e;
   color: #1abc9c;
 }
-/* line 118, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 114, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+#pm-ui .dk_options_inner {
+  max-height: none;
+}
+/* line 119, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .btn i {
   vertical-align: middle;
 }
-/* line 123, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 124, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .navbar .site-title {
   float: left;
   margin: 0em 1em 0 0.0em;
@@ -8289,7 +8293,7 @@ body {
   font-weight: normal;
   font-size: 1.285em;
 }
-/* line 134, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 135, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .navbar .site-logo {
   background: url("../images/logo@2x.png");
   background-repeat: no-repeat;
@@ -8300,21 +8304,21 @@ body {
   margin: 0.5em 1em 0.5em 0.0em;
   padding-top: 0px;
 }
-/* line 146, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 147, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .navbar .ui-module-wrap {
   margin: 6px 0 -5px;
 }
-/* line 150, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 151, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .navbar .nav, #pm-ui .navbar .ui-module-wrap {
   float: right;
 }
-/* line 156, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 157, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .navbar-inverse .brand,
 #pm-ui .navbar-inverse .nav > li > a {
   text-shadow: 0 0px 0 rgba(0, 0, 0, 0);
   color: #fff;
 }
-/* line 161, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 162, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .loading-msg {
   color: #1abc9c;
   font-size: 3em;
@@ -8322,14 +8326,14 @@ body {
   margin-top: 3em;
   text-align: center;
 }
-/* line 169, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 170, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .options-wrap {
   /*margin-top:22px;*/
   /*width: 220px;*/
   /*float: left;
   overflow: hidden;*/
 }
-/* line 176, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 177, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap, #pm-ui .plot-wrapper {
   overflow: hidden;
   padding: 0px 0 0px 0;
@@ -8347,7 +8351,7 @@ body {
       margin-top: 1em;
   }*/
 }
-/* line 189, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 190, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap .title, #pm-ui .plot-wrapper .title {
   /*width:100%;*/
   /*width:150px;*/
@@ -8362,7 +8366,7 @@ body {
   font-size: 1em;
   width: 140px;
 }
-/* line 204, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 205, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap.collapsed, #pm-ui .plot-wrapper.collapsed {
   height: 60px;
   /*background-color: #2E4053;*/
@@ -8374,18 +8378,18 @@ body {
       @include opacity( 0 );
   }*/
 }
-/* line 212, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 213, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap.collapsed .title:after, #pm-ui .plot-wrapper.collapsed .title:after {
   content: '';
 }
-/* line 215, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 216, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap.collapsed .title, #pm-ui .plot-wrapper.collapsed .title {
   color: #ECF0F1;
   color: #2c3e50;
   font-weight: normal;
   /*width:140px;*/
 }
-/* line 228, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 229, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap .ctrl-calc,
 #pm-ui .parameters-wrap .ctrl-calc + label, #pm-ui .plot-wrapper .ctrl-calc,
 #pm-ui .plot-wrapper .ctrl-calc + label {
@@ -8394,7 +8398,7 @@ body {
   vertical-align: middle;
   margin-right: 0.5em;
 }
-/* line 234, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 235, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap .collapse-ctrl, #pm-ui .parameters-wrap .collapse-ctrl-plot, #pm-ui .plot-wrapper .collapse-ctrl, #pm-ui .plot-wrapper .collapse-ctrl-plot {
   float: right;
   /*width:26px;*/
@@ -8410,31 +8414,31 @@ body {
   color: #95a5a6;
   font-family: 'Courier New', 'monoFontFamily';
 }
-/* line 251, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 252, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap .collapse-ctrl:hover, #pm-ui .parameters-wrap collapse-ctrl-plot:hover, #pm-ui .plot-wrapper .collapse-ctrl:hover, #pm-ui .plot-wrapper collapse-ctrl-plot:hover {
   color: #2c3e50 pm;
 }
-/* line 255, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 256, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap .btn-wrap, #pm-ui .plot-wrapper .btn-wrap {
   text-align: right;
 }
-/* line 259, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 260, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap .form-horizontal, #pm-ui .plot-wrapper .form-horizontal {
   margin-top: 1em;
 }
-/* line 266, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 267, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap .form-horizontal .control-group, #pm-ui .plot-wrapper .form-horizontal .control-group {
   margin-bottom: 5px;
 }
-/* line 270, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 271, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap .full, #pm-ui .plot-wrapper .full {
   width: 100%;
 }
-/* line 275, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 276, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .plot-wrapper {
   position: relative;
 }
-/* line 278, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 279, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .plot-wrapper.spinner:after {
   content: '';
   background: rgba(255, 255, 255, 0.8) url('../images/spinner.gif?1408644482') no-repeat center center;
@@ -8445,48 +8449,48 @@ body {
   bottom: 0;
   z-index: 10;
 }
-/* line 289, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 290, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .plot-wrapper .title {
   width: 510px;
 }
-/* line 294, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 295, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .last-parameters {
   border-bottom: 1px solid #95a5a6;
   padding-bottom: 20px;
   margin-bottom: 40px;
 }
-/* line 306, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 307, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .plot .title {
   /*font-size: 1.5em;*/
   font-weight: normal;
   font-style: normal;
   width: auto;
 }
-/* line 314, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 315, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .plot .axis path,
 #pm-ui .plot .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
-/* line 320, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 321, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .plot .line {
   fill: none;
   stroke-width: 1.5px;
 }
-/* line 325, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 326, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .plot .menu-ctrl {
   position: absolute;
   left: 0px;
   top: 26px;
   z-index: 3;
 }
-/* line 333, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 334, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .plot .menu-ctrl .btn {
   padding: 0px 4px;
   font-size: 12px;
 }
-/* line 349, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 350, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui #logs {
   width: 100%;
   height: 200px;
@@ -8499,102 +8503,102 @@ body {
   -o-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
 }
-/* line 357, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 358, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui #logs p {
   font-family: Menlo, Consolas, "Courier New", monospace;
 }
-/* line 366, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 367, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui input,
 #pm-ui textarea,
 #pm-ui .uneditable-input {
   width: 70px;
 }
-/* line 370, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 371, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap label, #pm-ui .plot-wrapper label {
   width: 220px;
   margin-top: 2em;
   font-style: italic;
 }
-/* line 375, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 376, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .parameters-wrap .control-label {
   width: 120px;
   margin-top: 0;
   font-style: normal;
 }
-/* line 381, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 382, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .control-label {
   width: 120px;
 }
-/* line 394, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 395, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .dropdown select {
   position: relative;
   top: 0;
   visibility: visible;
 }
-/* line 402, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 403, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .checkbox.control-label {
   cursor: pointer;
   text-align: right;
   padding-left: 0;
 }
-/* line 407, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 408, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .checkbox.control-label .icon {
   top: 5px;
   right: -38px;
   left: auto;
 }
-/* line 413, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 414, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .checkbox.control-label .icon-to-fade {
   top: 5px;
   left: auto;
   right: -38px;
 }
-/* line 420, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 421, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .checkbox.control-label:disabled .icon, #pm-ui input[type=checkbox][disabled] .icon, #pm-ui input[type=checkbox][disabled] .icon-to-fade {
   background-position: -90px 0px;
 }
-/* line 428, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 429, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .share-wrap {
   /*position: relative;*/
 }
-/* line 431, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 432, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui #share-url {
   /*display: inline;*/
   width: 120px;
   float: right;
 }
-/* line 440, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 441, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .ctrl-share {
   float: left;
   margin-top: 6px;
 }
-/* line 445, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 446, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .btn {
   padding: 4px 8px;
   /*background-color: $firm;*/
 }
-/* line 450, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 451, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .ctrl-calc {
   padding: 10px 75px;
 }
-/* line 462, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 463, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui #time-delay {
   margin: 1em 0;
   margin-left: 80px;
   overflow: visible;
 }
-/* line 487, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 488, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .page-title {
   font-size: 3.4285em;
   margin: 1em 0 1em 0;
 }
-/* line 494, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 495, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .form-horizontal .controls {
   *padding-left: 0px;
   margin-left: 136px;
   *margin-left: 0;
 }
-/* line 498, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
+/* line 499, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .form-horizontal .controls:first-child {
   *padding-left: 136px;
 }
