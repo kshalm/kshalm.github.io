@@ -8275,10 +8275,6 @@ body {
   background: #34495e;
   color: #1abc9c;
 }
-/* line 114, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
-#pm-ui .dk_options_inner {
-  max-height: none;
-}
 /* line 118, /Users/lks/Documents/Code/Javascript/PhasematchJS/browser/library/styles/_pm-ui.scss */
 #pm-ui .btn i {
   vertical-align: middle;
