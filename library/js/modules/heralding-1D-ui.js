@@ -113,7 +113,7 @@ define(
                         y: 'Efficiency'
                     },
                     format: {x: '1f'
-                            ,y: '.1f'},
+                            ,y: '.2f'},
                     width: 400,
                     height: 200,
                     yrange: [0,1]
@@ -282,9 +282,12 @@ define(
                 tsi = PhaseMatch.autorange_delT(props, lim.lambda_s.min, lim.lambda_s.max);
 
                 self.plotOpts.set({
-                    'grid_size_heralding_JSI': 40,
-                    'n_pts_eff_1d': 30,
+                    'grid_size_heralding_JSI': 30,
+                    'n_pts_eff_1d': 15,
                     'n_int': 14,
+                    // 'grid_size_heralding_JSI': 2,
+                    // 'n_pts_eff_1d': 2,
+                    // 'n_int': 2,
                     'ls_start': lim.lambda_s.min,
                     'ls_stop': lim.lambda_s.max,
                     'li_start': lim.lambda_i.min,
@@ -293,8 +296,8 @@ define(
                     // 'delT_start': tsi[1],
                     // 'delT_stop': tsi[2],
 
-                    'Ws_start': 50e-6,
-                    'Ws_stop': 200e-6
+                    'Ws_start': 60e-6,
+                    'Ws_stop': 160e-6
                 });
 
                 self.set_slider_values(150e-6, self.plotOpts.get['Ws_start'], self.plotOpts.get['Ws_stop']);
@@ -324,6 +327,11 @@ define(
                             self.plotOpts.get('Ws_stop'),
                             npts
                         );
+                    // ,Ws = PhaseMatch.linspace(
+                    //         P.W_sx,
+                    //         1.001*P.W_sx,
+                    //         npts
+                    //     );
                     ;
 
                 // // First calc the joint spectrum.
@@ -617,7 +625,7 @@ define(
                             ;
                         // console.log("Efficiency from sum: ", Rc, Rs, eff); /// PhaseMatch.sum(self.data));
                         // console.log("Efficiency from sum: ", Ws, eff); /// PhaseMatch.sum(self.data));
-                        self.plot1dEff.setTitle("Waist: " + (Ws*1e6).toFixed(0) + "um  |  Signal: " + eff_s.toFixed(2) + "  |  Idler: "+  eff_i.toFixed(2) );
+                        self.plot1dEff.setTitle("Waist: " + (Ws*1e6).toFixed(0) + "um  |  Signal: " + eff_s.toFixed(3) + "  |  Idler: "+  eff_i.toFixed(3) );
 
                         self.plotCoinc.setXRange([ converter.to('nano', self.plotOpts.get('ls_start')), converter.to('nano', self.plotOpts.get('ls_stop')) ]);
                         self.plotCoinc.setYRange([ converter.to('nano', self.plotOpts.get('li_start')), converter.to('nano', self.plotOpts.get('li_stop')) ]);
