@@ -8420,7 +8420,7 @@ body {
 /* line 279, _pm-ui.scss */
 #pm-ui .plot-wrapper.spinner:after {
   content: '';
-  background: rgba(255, 255, 255, 0.8) url('../images/spinner.gif?1385355388') no-repeat center center;
+  background: rgba(255, 255, 255, 0.8) url('../images/spinner.gif?1450300845') no-repeat center center;
   position: absolute;
   top: 0;
   left: 0;
