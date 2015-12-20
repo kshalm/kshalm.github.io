@@ -1,5 +1,5 @@
 /**
- * phasematchjs v0.0.1a - 2015-12-16
+ * phasematchjs v0.0.1a - 2015-12-20
  *  ENTER_DESCRIPTION 
  *
  * Copyright (c) 2015 Krister Shalm <kshalm@gmail.com>
@@ -6332,7 +6332,8 @@ PhaseMatch.Crystals('LiIO3-2', {
         enable_pp: true,
         calcfibercoupling: true,
         singles: false,
-        z0s: 2000/2 * con.um,
+        z0s: -2000/2 * con.um,
+        z0: 2000/2 * con.um
     };
 
     var spdcDefaultKeys = PhaseMatch.util.keys( spdcDefaults );
@@ -6893,9 +6894,10 @@ PhaseMatch.Crystals('LiIO3-2', {
                     //     }
                     // }
 
-                    if (name === 'z0s'){
+                    if (name === 'z0'){
                         // Match the idler waist position to that of the signal
-                        this.z0i = val;                   
+                        this.z0s = val - this.L;
+                        this.z0i = val - this.L;                   
                     }
 
                     this[ name ] = val;
@@ -7251,6 +7253,10 @@ PhaseMatch.calc_PM_Curves = function calc_PM_Curves(props, l_start, l_stop, lp_s
             P.lambda_s = lambda_s[index_s];
             P.lambda_p = lambda_p[index_p];
             P.lambda_i = 1/(1/P.lambda_p - 1/P.lambda_s);
+
+            // P.S_p = P.calc_Coordinate_Transform(P.theta, P.phi, P.theta_p, P.phi_p);
+            // P.S_s = P.calc_Coordinate_Transform(P.theta, P.phi, P.theta_s, P.phi_s);
+            // P.S_i = P.calc_Coordinate_Transform(P.theta, P.phi, P.theta_i, P.phi_i);
 
             P.n_p = P.calc_Index_PMType(P.lambda_p, P.type, P.S_p, "pump");
             P.n_s = P.calc_Index_PMType(P.lambda_s, P.type, P.S_s, "signal");

@@ -450,7 +450,7 @@ define(
                         for ( var i = 0, l = eff_i.length; i < l; i ++){
                             // console.log(eff[i]);
                             dataEff_i.push({
-                                x: Ws[i]/1e-6,
+                                x: (Ws[i] + props.L)/1e-6,
                                 y: eff_i[i]
                             })
                         }
@@ -459,7 +459,7 @@ define(
                         for ( var i = 0, l = eff_s.length; i < l; i ++){
                             // console.log(eff[i]);
                             dataEff_s.push({
-                                x: Ws[i]/1e-6,
+                                x: (Ws[i] + props.L)/1e-6,
                                 y: eff_s[i]
                             })
                         }
@@ -471,7 +471,7 @@ define(
                         for ( var i = 0, l = R_s.length; i < l; i ++){
                             // console.log(eff[i]);
                             dataR_s.push({
-                                x: Ws[i]/1e-6,
+                                x: (Ws[i] + props.L)/1e-6,
                                 y: R_s[i]/RMax
                             })
                         }
@@ -480,7 +480,7 @@ define(
                         for ( var i = 0, l = R_i.length; i < l; i ++){
                             // console.log(eff[i]);
                             dataR_i.push({
-                                x: Ws[i]/1e-6,
+                                x: (Ws[i] + props.L)/1e-6,
                                 y: R_i[i]/RMax
                             })
                         }
@@ -489,7 +489,7 @@ define(
                         for ( var i = 0, l = R_coin.length; i < l; i ++){
                             // console.log(eff[i]);
                             dataR_coin.push({
-                                x: Ws[i]/1e-6,
+                                x: (Ws[i] + P.L)/1e-6,
                                 y: R_coin[i]/RMax
                             })
                         }
@@ -513,7 +513,7 @@ define(
 
                         self.plot1dEff.setYRange([effMin, effMax]);
 
-                        self.set_slider_values(props.W_sx, Ws[0], Ws[Ws.length-1]);
+                        self.set_slider_values(props.W_sx, Ws[0] + props.L, Ws[Ws.length-1] + props.L);
 
                          var endtime = new Date();
                         return true;
@@ -546,10 +546,10 @@ define(
                     ,lambda_i_range = []
                     ,z0 = self.get('delT')
                     ;
-
+                z0 = z0 - props.L;
                 props.z0s = z0;
                 props.z0i = z0;
-                console.log("Z0: ", z0*1e6);
+                console.log("Z0: ", z0*1e6, props.z0s * 1e6);
 
                 // props.W_sx = Ws;
                 // props.W_ix = Ws;
@@ -647,6 +647,7 @@ define(
                     ,z0 = self.get('delT')
                     ;
 
+                    z0 = z0 - props.L;
                     props.z0s = z0;
                     props.z0i = z0;
                     // ,Wi_SQ = Math.pow(Ws,2) // convert from FWHM to sigma @TODO: Change to props.W_i
@@ -719,7 +720,7 @@ define(
                         console.log("in coinc calc");
                         // console.log("Efficiency from sum: ", Rc, Rs, eff); /// PhaseMatch.sum(self.data));
                         // console.log("Efficiency from sum: ", Ws, eff); /// PhaseMatch.sum(self.data));
-                        self.plot1dEff.setTitle("Waist position: " + (z0*1e6).toFixed(0) + "um  |  Signal: " + eff_s.toFixed(3) + "  |  Idler: "+  eff_i.toFixed(3) );
+                        self.plot1dEff.setTitle("Waist position: " + ((z0+props.L)*1e6).toFixed(0) + "um  |  Signal: " + eff_s.toFixed(3) + "  |  Idler: "+  eff_i.toFixed(3) );
 
                         self.plotCoinc.setXRange([ converter.to('nano', self.plotOpts.get('ls_start')), converter.to('nano', self.plotOpts.get('ls_stop')) ]);
                         self.plotCoinc.setYRange([ converter.to('nano', self.plotOpts.get('li_start')), converter.to('nano', self.plotOpts.get('li_stop')) ]);
