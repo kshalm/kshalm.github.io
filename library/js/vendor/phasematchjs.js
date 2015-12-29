@@ -1,5 +1,5 @@
 /**
- * phasematchjs v0.0.1a - 2015-12-20
+ * phasematchjs v0.0.1a - 2015-12-28
  *  ENTER_DESCRIPTION 
  *
  * Copyright (c) 2015 Krister Shalm <kshalm@gmail.com>
@@ -6332,8 +6332,7 @@ PhaseMatch.Crystals('LiIO3-2', {
         enable_pp: true,
         calcfibercoupling: true,
         singles: false,
-        z0s: -2000/2 * con.um,
-        z0: 2000/2 * con.um
+        z0s: 2000/2 * con.um,
     };
 
     var spdcDefaultKeys = PhaseMatch.util.keys( spdcDefaults );
@@ -6894,10 +6893,9 @@ PhaseMatch.Crystals('LiIO3-2', {
                     //     }
                     // }
 
-                    if (name === 'z0'){
+                    if (name === 'z0s'){
                         // Match the idler waist position to that of the signal
-                        this.z0s = val - this.L;
-                        this.z0i = val - this.L;                   
+                        this.z0i = val;                   
                     }
 
                     this[ name ] = val;
