@@ -1,5 +1,5 @@
 /**
- * phasematchjs v0.0.1a - 2016-08-28
+ * phasematchjs v0.0.1a - 2016-09-12
  *  ENTER_DESCRIPTION 
  *
  * Copyright (c) 2016 Krister Shalm <kshalm@gmail.com>
@@ -20942,9 +20942,9 @@ PhaseMatch.Crystals('LiIO3-2', {
 
     var con = PhaseMatch.constants;
     var spdcDefaults = {
-        lambda_p: 785 * con.nm,
-        lambda_s: 1570 * con.nm,
-        lambda_i: 1570 * 785 * con.nm / ( 1570 -  785 ),
+        lambda_p: 775 * con.nm,
+        lambda_s: 1550 * con.nm,
+        lambda_i: 1550 * 775 * con.nm / ( 1550 -  775 ),
         type: "Type 2:   e -> e + o",
         theta: 90 *Math.PI / 180,
         phi: 0,
